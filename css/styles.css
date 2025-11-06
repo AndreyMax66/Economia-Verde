@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,9 @@
 body{
     color: aliceblue;
     background-color: #314028;
+     font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 header{
    background-color:  #526448;
@@ -16,6 +20,12 @@ header{
 }
 footer{
     background-color: #526448;
+    text-align: center;
+}
+footer nav{
+    text-align: center;
+    color: #ffffff;
+    
 }
 nav{
     display: flex;
