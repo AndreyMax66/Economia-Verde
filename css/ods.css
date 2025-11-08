@@ -1,0 +1,66 @@
+/* Garantindo que as imagens dentro da div 'ods-display' terão cursor clicável */
+.ods-display img {
+    cursor: pointer;
+}
+
+/* Definições para o modal */
+.modal {
+    /* Deixando o modal fixo e ocupando 100% do espaço da tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Garantindo que caso o conteúdo transborde a página lidará com isso com uma scrollbar */
+    overflow: auto;
+    /* Posicionando ele "à frente" dos outros elementos por meio do z-index */
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Definindo que o conteúdo dentro do modal ficará centralizado sempre */
+    justify-items: center;
+    align-content: center;
+    padding: 1em;
+}
+
+/* Definições para o card do modal */
+.modal-card {
+    width: min(40em, 90%);
+}
+
+/* Definições para o header do card do modal */
+.modal-card-header {
+    background-color: #418bb6;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Definições para o botão de fechar o modal */
+#close-btn {
+    cursor: pointer;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 28%;
+    right: 20px;
+}
+
+/* Definições para o body do card do modal */
+.modal-card-body {
+    background-color: #fff;
+    color: #314028;
+    padding: 1em 2em;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.15rem;
+}
+
+/* Definições para os span de classe 'subtitulo' */
+.subtitulo {
+    font-weight: 600;
+}
+
+/* Definições para os span de classe 'italico' */
+.italico {
+    font-style: italic;
+    text-decoration: underline;
+}
