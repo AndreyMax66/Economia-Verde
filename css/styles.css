@@ -10,6 +10,9 @@
 body{
     color: aliceblue;
     background-color: #314028;
+     font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Definições do header */
