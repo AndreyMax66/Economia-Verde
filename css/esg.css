@@ -1,0 +1,59 @@
+/* ================== Seção intro da parte de ESG do site ================== */
+#esg-intro {
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.esg-intro-botoes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Definindo alinhamento principal para as divs de cada esg */
+#esg-ambiental, #esg-social, #esg-governanca {
+    justify-content: space-evenly;
+    scroll-margin-top: 70px;
+}
+
+/* ================== Divs de display da seção de esg ================== */
+.esg-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    justify-items: center;
+    padding: 5%;
+}
+
+.esg-display img {
+    width: 80%;
+    border-radius: 40px;
+}
+
+.esg-display ul {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+/* ================= MEDIA QUERY ===================== */
+@media (max-width: 600px) {
+    .esg-intro-botoes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .esg-display {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .esg-display img {
+        order: 1;
+    }
+
+    .esg-display ul {
+        order: 2;
+    }
+}

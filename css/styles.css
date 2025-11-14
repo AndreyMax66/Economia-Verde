@@ -1,35 +1,59 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Radley:ital@0;1&display=swap');
+
 /* Definições gerais */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: "Questrial", sans-serif;
 }
 
 /* Definições do body */
 body{
-    color: aliceblue;
+    color: #f4f1e8;
     background-color: #314028;
-     font-family: "Questrial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 /* Definições do header */
 header{
    background-color:  #526448;
+   position: sticky;
+   top: 0;
+   width: 100%;
+   padding: 1rem 2rem;
+   font-size: 1.6rem;
+   z-index: 1;
 }
 
 /* Definições do footer */
 footer{
     background-color: #526448;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 1.1rem;
 }
 
 /* Definições do nav */
 nav{
     display: flex;
-    margin-left: 50px;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 1rem 4rem;
+}
+
+/* Definições das tags <a> dentro do NAV */
+nav a {
+    font-family: "Radley", serif;
+    font-style: italic;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    transform: scale(1.05);
 }
 
 /* Definições das tags <a> */
@@ -38,10 +62,69 @@ a{
     text-decoration: none;
 }
 
+/* Fonte e tamanho padrão para títulos e subtítulos */
+h1, h2 {
+    font-family: "Radley", serif;
+    font-style: italic;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* Tamanho padrão de parágrafos */
+p {
+    font-size: clamp(1.4rem, 3vw, 1.6rem);
+}
+
 /* Definições do main */
 main {
-    margin: 1rem 0;
-    padding: 0 5%;
+    padding: 0 10%;
+}
+
+/* CLASSE A SER USADA EM TODAS AS SUBSEÇÕES que são um flexbox em direção de linha */
+.column-flexbox {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* CLASSE A SER USADA NOS BOTÕES DOS PILARES DE ECOVERDE E TÓPICOS DE ESG */
+.btns {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    padding: 2rem;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    background-color: #f4f1e8;
+    color: #314028;
+}
+
+.btns:hover {
+    transform: translateY(2px);
+    background-color: #526448;
+    color: #f4f1e8;
+}
+
+/* ======================== MEDIA QUERY para Scroll-Margin-Top ============================= */
+@media (max-width: 458px) {
+    #ecoverde,
+    #ecoverde #ecoverde-pilares, 
+    #ecoverde #ecoverde-recursos, 
+    #ecoverde #ecoverde-inclusao, 
+    #ecoverde #ecoverde-preservacao,
+    #esg #esg-ambiental,
+    #esg #esg-social,
+    #esg #esg-governanca
+    {
+        scroll-margin-top: 88px;
+    }
+
+    #esg {
+        scroll-margin-top: 118px;
+    }
+
+    main #ods {
+        scroll-margin-top: 128px;
+    }
 }

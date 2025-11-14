@@ -1,7 +1,31 @@
-/* Garantindo que as imagens dentro da div 'ods-display' terão cursor clicável */
-.ods-display img {
-    cursor: pointer;
+/* ================== Configurações para a seção ODS ================== */
+#ods {
+    justify-content: space-evenly;
+    gap: 1rem;
+    scroll-margin-top: 60px;
 }
+
+.ods-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ods-display img {
+    width: 9rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.ods-display img:hover {
+    transform: scale(1.1);
+}
+
+/* ================== CONFIGURAÇÕES MODAL ================== */
+/* Garantindo que as imagens dentro da div 'ods-display' terão cursor clicável */
 
 /* Definições para o modal */
 .modal {
@@ -33,21 +57,24 @@
     padding: 10px;
     border-radius: 10px 10px 0 0;
     text-align: center;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-card-header h2 {
+    flex: 1;
 }
 
 /* Definições para o botão de fechar o modal */
 #close-btn {
     cursor: pointer;
     font-size: 1.4rem;
-    position: absolute;
-    top: 28%;
-    right: 20px;
 }
 
 /* Definições para o body do card do modal */
 .modal-card-body {
-    background-color: #fff;
+    background-color: #f4f1e8;
     color: #314028;
     padding: 1em 2em;
     border-radius: 0 0 10px 10px;
